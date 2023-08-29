@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Apartaments.Infrastructure;
+﻿using Apartaments.Infrastructure;
 
 namespace Apartaments.Models.PageModels
 {

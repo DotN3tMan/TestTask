@@ -14,5 +14,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin: 0px;
+}
+
+td {
+    text-align: center;
 }

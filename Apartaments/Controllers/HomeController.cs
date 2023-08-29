@@ -26,11 +26,6 @@ namespace Apartaments.Controllers
             return new JsonResult(IndexModel.GetDataChart(id));
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
