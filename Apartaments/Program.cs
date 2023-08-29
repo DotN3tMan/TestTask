@@ -1,3 +1,7 @@
+//init db
+Apartaments.Infrastructure.SqlLiteManager.Init();
+Apartaments.Infrastructure.SqlLiteManager.SeedData();
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -10,6 +14,7 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -21,3 +26,5 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+Apartaments.Infrastructure.SqlLiteManager.Close();

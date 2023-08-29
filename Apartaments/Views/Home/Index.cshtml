@@ -1,8 +1,58 @@
-﻿@{
+﻿@model Apartaments.Models.PageModels.IndexModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    <label>Комнат:</label>
+
+    <select id="byRooms">
+
+        <option selected="selected" value="0">не выбрано</option>
+
+        @foreach(var i in Model.Apartaments.GroupBy(x => x.CountRooms))
+        {
+            <option value="@i.Key">@i.Key</option>
+        }
+    </select>
+
+    <input type="button" value="Показать" onclick="ByFilter()" />
+</div>
+
+
+<table>
+    <thead>
+        <tr>
+            <td>Комнат</td>
+            <td>Цена</td>
+            <td>На сайт застройщика</td>
+            <td>История цены</td>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var a in Model.Apartaments)
+        {
+            <tr>
+                <td>@a.CountRooms</td>
+                <td>@a.ActualPrice</td>
+                <td>
+                    <a href="@a.UrlStr">Перейти</a>
+                </td>
+                <td>
+                    <input type="button" value="Показать" onclick="DrawChart(@a.Id)" />
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+    <tfoot></tfoot>
+
+</table>
+
+<div>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
 </div>

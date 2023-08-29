@@ -1,0 +1,17 @@
+﻿INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 1, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 2, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 3, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 4, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 6, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 1, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 2, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 3, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 4, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 5, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 6, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 1, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 2, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 3, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 4, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 5, 'https://www.pik.ru/flat/901021');
+INSERT INTO Apartaments (count_rooms, url_str) VALUES ( 6, 'https://www.pik.ru/flat/901021');

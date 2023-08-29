@@ -1,6 +1,7 @@
 ﻿using Apartaments.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Apartaments.Models.PageModels;
 
 namespace Apartaments.Controllers
 {
@@ -13,9 +14,16 @@ namespace Apartaments.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Index(int byRooms)
         {
-            return View();
+            return View(new IndexModel(byRooms));
+        }
+
+        [HttpGet]
+        public JsonResult LineChart(int id)
+        {
+            return new JsonResult(IndexModel.GetDataChart(id));
         }
 
         public IActionResult Privacy()
